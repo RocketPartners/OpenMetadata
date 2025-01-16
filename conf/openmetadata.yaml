@@ -16,7 +16,7 @@ swagger:
 
 
 server:
-  rootPath: '/api/*'
+  rootPath: ${OPENMETADATA_ROOT_PATH:-/api/*}
   applicationConnectors:
     - type: http
       bindHost: ${SERVER_HOST:-0.0.0.0}
